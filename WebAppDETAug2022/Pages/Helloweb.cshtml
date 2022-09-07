@@ -1,0 +1,41 @@
+﻿@page
+@model WebAppDETAug2022.Pages.HellowebModel
+@{
+}
+ <h2>Welcome to my site</h2>
+ <h3>Happy ! @DateTime.Today.DayOfWeek!!</h3>
+
+ Pages say some @Model.Message
+
+
+ <p>Discount is @Model.Discount</p>
+ <h3>Discount is upto @DateTime.Today.AddDays(1)</h3>
+ <h2>Apply the Coupon @Model.Coupon</h2>
+
+<p>@@Username</p>
+<a href="mailto:Support@mail.com"> Support@mail.com</a>
+
+
+@*Scalable Vector Graphics (SVG)*@
+
+
+@{
+    string message = "foreignObject example with Scalable Vector Graphics (SVG)";
+}
+
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" rx="20" ry="20" width="200" height="200" stroke="red"
+          fill="green" />
+    <foreignObject x="30" y="30" width="160" height="160">
+        <p>@message</p>
+    </foreignObject>
+</svg>
+
+
+@*Implicit Razor expressions*@
+
+<p>@DateTime.Now</p>
+<p>@DateTime.IsLeapYear(2018)</p>
+
+
+<p>Last week this time: @(DateTime.Now - TimeSpan.FromDays(3))</p>
