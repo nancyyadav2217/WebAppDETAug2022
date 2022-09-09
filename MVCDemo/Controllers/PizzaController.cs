@@ -21,6 +21,7 @@ namespace MVCDemo.Controllers
 
         public IActionResult List()
         {
+            TempData["FestivaLOffer"] = 20;
             List<Pizza> pizzas = PizzaServices.GetAll();
             return View(pizzas);
         }
