@@ -1,33 +1,33 @@
-using Xunit;
+//using Xunit;
 
-namespace MyFirstUnitTests
-{
-    public class UnitTest1
-    {
-        [Fact]
-        public void PassingTest()
-        {
-            Assert.Equal(4, Add(2, 2));
-        }
+//namespace MyFirstUnitTests
+//{
+//    public class UnitTest1
+//    {
+//        [Fact]
+//        public void PassingTest()
+//        {
+//            Assert.Equal(4, Add(2, 2));
+//        }
 
-        [Fact]
-        public void FailingTest()
-        {
-            Assert.Equal(5, Add(2, 2));
-        }
+//        [Fact]
+//        public void FailingTest()
+//        {
+//            Assert.Equal(5, Add(2, 2));
+//        }
 
-        int Add(int x, int y)
-        {
-            return x + y;
-        }
-        public void MyFirstTheory(int value)
-        {
-            Assert.True(IsOdd(value));
-        }
+//        int Add(int x, int y)
+//        {
+//            return x + y;
+//        }
+//        public void MyFirstTheory(int value)
+//        {
+//            Assert.True(IsOdd(value));
+//        }
 
-        bool IsOdd(int value)
-        {
-            return value % 2 == 1;
-        }
-    }
-}
+//        bool IsOdd(int value)
+//        {
+//            return value % 2 == 1;
+//        }
+//    }
+//}
